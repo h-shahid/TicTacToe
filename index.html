@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Lab</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    body {
+      background-color: powderblue;
+    }
+    h1 {
+      color: blue;
+    }
+  </style>
+  <body>
     <div class="container" id="board">
-        <h1>Tic Tac Toe</h1>
-        <div class="row">
-            <div class="top left"></div>
-            <!--squares-->
-            <div class="top middle"></div>
-            <div class="top right"></div>
-        </div>
-        <div class="row">
-            <div class="center left"></div>
-            <!--squares-->
-            <div class="center middle"></div>
-            <div class="center right"></div>
-
-        </div>
-        <div class="row">
-            <div class="bottom left"></div>
-            <div class="bottom middle"></div>
-            <!--squares-->
-            <div class="bottom right"></div>
-        </div>
-
-
+      <h1>&#10060; Tic Tac Toe &#11093;</h1>
+      <div class="row">
+        <div class="cell top left" data-cellnumber="0"></div>
+        <!--squares-->
+        <div class="cell top middle" data-cellnumber="1"></div>
+        <div class="cell top right" data-cellnumber="2"></div>
+      </div>
+      <div class="row">
+        <div class="cell center left" data-cellnumber="3"></div>
+        <!--squares-->
+        <div class="cell center middle" data-cellnumber="4"></div>
+        <div class="cell center right" data-cellnumber="5"></div>
+      </div>
+      <div class="row">
+        <div class="cell bottom left" data-cellnumber="6"></div>
+        <div class="cell bottom middle" data-cellnumber="7"></div>
+        <!--squares-->
+        <div class="cell bottom right" data-cellnumber="8"></div>
+      </div>
     </div>
 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div
+      style="
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        width: 110px;
+      "
+    >
+      <div class="winning message" id="winningMessage">
+        <h1 id="data-winning-message-text"></h1>
+      </div>
+      <div style="display: table;"></div>
+      <button id="restartButton">Restart Game</button>
+    </div>
 
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
+
+
+
